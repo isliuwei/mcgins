@@ -1,0 +1,60 @@
+
+#content .feature-first{	
+	background: url(../img/content-first-bg.jpg) no-repeat;
+	background-size: cover;
+	/*background-size: 100%;*/
+	/*height: 450px;*/
+}
+
+#content .title{
+	height: 100px;
+}
+#content li p{
+	text-indent: 25px;
+}
+
+
+#content .feature-second{	
+	padding-top: 10%;
+	background: url(../img/content-first-bg.jpg) no-repeat;
+	/*background-size: 100%;*/
+	background-size: cover;
+	/*height: 450px;*/
+}
+/*媒体查询，干掉背景图片*/
+@media all and (max-width: 767px) {
+	#content .feature-first,#content .feature-second{
+		background-size: 0 0;
+	}
+}
+/*轮播图*/
+#carousel{
+	margin-top: 140px;
+	background: url(../img/bg.jpg) no-repeat;
+}
+/*轮播图按钮*/
+#carousel-example-generic .carousel-direction{
+	font-size: 60px;
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 5;
+    display: inline-block;
+    margin-top: -10px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+}
+#carousel-example-generic{
+	
+}
+#carousel-example-generic .item img{
+	/*width: 100%;*/
+}
+#carousel-example-generic{
+	/*margin-top: 20%;*/
+}
+
+
+
