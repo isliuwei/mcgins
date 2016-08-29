@@ -3,18 +3,21 @@
 	padding: 35px;
 }
 #content .title{
-
+	color: #565668;
 }
 #content .title h1{
 	font-size: 22px;
 	font-weight: bolder;
-	color: #565668;
 /*	height: 76px;
 	line-height: 76px;*/
 }
+#content .title span{
+	font-size: 12px;
+	font-weight: bold;
+}
 #content .title p{
 	font-size: 16px;
-	font-weight: bold;	
+
 }
 #content .title p:last-child{
 	border-bottom: 1px #dce1e7 solid;
@@ -35,7 +38,7 @@
 	margin-bottom: 35px;
 }
 #course-plan table tr td{
-	padding: 20px;
+	padding: 10px;
 }
 /*表头*/
 #course-plan table thead tr{

@@ -11,6 +11,7 @@ a{
 }
 body{
 	border: 0;
+	font-family: "Microsoft YaHei" !important;
 }
 a:hover{
 	text-decoration: none !important;
@@ -24,29 +25,23 @@ img{
 	top: 0;*/
 	margin-bottom: 140px;
 }
+/*头部*/
 #header{
 	height: 80px;
-	
-}
+	line-height: 80px;
 
-/*顶部按钮*/
-.icon-bar{
-background: rgb(66, 133, 244);
-/*background: #002b7f;*/
 }
-/*电话*/
-#tel a,#change a{
+#header a{
 	color: #000;
 	font-weight: bold;
 }
-#tel{
-	line-height: 80px;
+/*顶部按钮*/
+.icon-bar{
+background: rgb(66, 133, 244);
 }
 /*语言切换*/
 #change{
-	line-height: 80px;
 	float: right;
-
 }
 
 #nav{
@@ -76,6 +71,8 @@ background: rgb(66, 133, 244);
 	}
 	#nav{
 		display: none;
+		width: 100%;
+		height: 100%;
 
 	}
 	#nav ul{
@@ -96,43 +93,24 @@ background: rgb(66, 133, 244);
 	#nav ul li:hover{
 		background:#00AEE8;
 	}
-}
-
-/*@media all and (max-width:800px) {
-	.navigation {
-		justify-content: space-around
+	#footer .QR{
+		float: right;
 	}
 }
-@media all and (max-width:600px) {
-	.navigation {
-		-webkit-flex-flow: column wrap;
-		padding: 0
-	}
-	.navigation a {
-		text-align: center;
-		padding: 10px;
-		border-top: 1px solid rgba(255, 255, 255, 0.3);
-		border-bottom: 1px solid rgba(0, 0, 0, 0.1)
-	}
-	.navigation li:last-of-type a {
-		border-bottom: none
-	}
-}
-*/
-
 
 #nav ul a{
 	color: #fff;
+	font-size: 15px;
 }
 /*nav鼠标滑过*/
 .choose{
 	background: url(../img/nav-bg.jpg) no-repeat center 80%;
 }
-footer .navbar{
+#footer .navbar{
 	margin-bottom: 0;	
 }
 #footer{
-	height: 180px;
+	height: 100%;
 	background: #404040;
 	color: #fff;
 	line-height: 180%;
@@ -140,6 +118,7 @@ footer .navbar{
 }
 #footer a{
 	color: #fff;
+	font-size: 10px;
 
 }
 #footer .website{
@@ -153,9 +132,10 @@ footer .navbar{
 #footer .addr{
 	/*padding-top: 10%;*/
 	padding: 0 0;
+	font-size: 10px;
 }
 #footer .QR{
-	/*padding-top: 5%;*/
+
 }
 #power-by{
 	height: 46px;

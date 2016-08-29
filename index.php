@@ -1,150 +1,205 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0" />
-	<title>麦金思少儿英语</title>
-	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="css/index.css">
-	<link href="css/bootstrap.min.css" rel="stylesheet">
-	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
-	<link rel="stylesheet" href="css/font-awesome.min.css" />
-	<style>
-
-	</style>
-</head>
-<body>
-	<?php
-		include "connect.php";	
-		$content = "SELECT * FROM t_webinfo";
-		$result = mysqli_query($link, $content);
-		$rs = mysqli_fetch_array($result);
-		
-		include	"header.php";
-	?>
-
-	
-
-<!-- 轮播图 -->
-<div id="carousel">
-	<div class="container main-carousel">
-		<div class="row">
-			<div class="col-md-10 col-md-offset-1">
-				<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-
-					<ol class="carousel-indicators">
-						<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-						<li data-target="#carousel-example-generic" data-slide-to="1"></li>
-						<li data-target="#carousel-example-generic" data-slide-to="2"></li>
-						<li data-target="#carousel-example-generic" data-slide-to="3"></li>
-					</ol>
-
-					<div class="carousel-inner" role="listbox">
-						<div class="item active">
-							<img src="img/banner1.jpg" alt="...">
-							<div class="carousel-caption">
-							</div>
-						</div>
-						<div class="item">
-							<img src="img/banner2.jpg" alt="...">
-							<div class="carousel-caption">
-							</div>
-						</div>
-						<div class="item">
-							<img src="img/banner3.jpg" alt="...">
-							<div class="carousel-caption">
-							</div>
-						</div>
-						<div class="item">
-							<img src="img/banner4.jpg" alt="...">
-							<div class="carousel-caption">
-							</div>
-						</div>
-					</div>
-
-					<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-						<span aria-hidden="true"><i class="fa fa-angle-left carousel-direction"></i></span>
-						<span class="sr-only">Previous</span>
-					</a>
-					<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-						<span aria-hidden="true"><i class="fa fa-angle-right carousel-direction"></i></span>
-						<span class="sr-only">Next</span>
-					</a>
-				</div>
-			</div>			
-		</div>
-	</div>
-	
-</div>
-<!-- 主体 -->
-<div class="container">
-    <div class="row">
-        <div id="content" class="col-md-10 col-md-offset-1">
-            <div class="feature-first col-md-12 col-sm-12">
-                <div class="title">
-                    <h1 class="col-md-4 col-md-offset-4 col-sm-8 col-sm-offset-2 text-center">麦金思特色教育</h1>
-                    <p class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 text-center">McGins English Education Feature</p>
-                </div>
-                <ul>
-                    <li class="col-md-3 col-sm-6 col-xs-6">
-                        <img src="img/icon1.jpg" alt="" class="img-circle img-responsive center-block" width="74px" height="74px">
-                        <h2 class="text-center">特色一</h2>
-                        <p>首家引进被美国英语教育界公认，并获得普遍赞誉的“最适合中国儿童英语学习”的原版教材。</p>
-                    </li>
-                    <li class="col-md-3 col-sm-6 col-xs-6">
-                        <img src="img/icon2.jpg" alt="" class="img-circle img-responsive center-block" width="74px" height="74px">
-                        <h2 class="text-center">特色二</h2>
-                        <p>由美国TESL硕士、K-12 ESL美国教育部注册教师、曾任教于美国公立学校、并曾担任美国加州知名培训机构校区总监的Ms.Laura，亲自督导教学、培训师资。</p>
-                    </li>
-                    <li class="col-md-3 col-sm-6 col-xs-6">
-                        <img src="img/icon3.jpg" alt="" class="img-circle img-responsive center-block" width="74px" height="74px">
-                        <h2 class="text-center">特色三</h2>
-                        <p>美国英语教育专家团队全程提供教学支持，实时更新来自美国最新的教学资源与方法。</p>
-                    </li>
-                    <li class="col-md-3 col-sm-6 col-xs-6">
-                        <img src="img/icon4.jpg" alt="" class="img-circle img-responsive center-block" width="74px" height="74px">
-                        <h2 class="text-center">特色四</h2>
-                        <p>教师团队均经过严格选拔、考核、培训，拥有TESL青少儿英语教师资格，个人教学能力均达到麦金思教学标准。</p>
-                    </li>
-                </ul>
-            </div>
-            <div class="feature-second col-md-12 col-sm-12">
-                <ul>
-                    <li class="col-md-3 col-sm-6 col-xs-6">
-                        <img src="img/icon5.jpg" alt="" class="img-circle img-responsive center-block" width="74px" height="74px">
-                        <h2 class="text-center">特色五</h2>
-                        <p>确保轻松应对在校英语考试，并无缝对接美国中小学课程，为考取名校、出国留学、出国考试打牢基础</p>
-                    </li>
-                    <li class="col-md-3 col-sm-6 col-xs-6">
-                        <img src="img/icon6.jpg" alt="" class="img-circle img-responsive center-block" width="74px" height="74px">
-                        <h2 class="text-center">特色六</h2>
-                        <p>确保轻松应对在校英语考试，并无缝对接美国中小学课程，为考取名校、出国留学、出国考试打牢基础</p>
-                    </li>
-                    <li class="col-md-3 col-sm-6 col-xs-6">
-                        <img src="img/icon7.jpg" alt="" class="img-circle img-responsive center-block" width="74px" height="74px">
-                        <h2 class="text-center">特色七</h2>
-                        <p>确保轻松应对在校英语考试，并无缝对接美国中小学课程，为考取名校、出国留学、出国考试打牢基础</p>
-                    </li>
-                    <li class="col-md-3 col-sm-6 col-xs-6">
-                        <img src="img/icon8.jpg" alt="" class="img-circle img-responsive center-block" width="74px" height="74px">
-                        <h2 class="text-center">特色八</h2>
-                        <p>权威测评体系，为每个孩子量身定制专属英语学习规划。</p>
-                    </li>
-                </ul>
-            </div>                  
-        </div>
-
-    </div>
-</div>
 <?php
-	include	"footer.php";
-?>
-</div>
-	<script src="js/jquery-1.11.3.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="js/jquery.goup.min.js"></script>
-	<script src="js/style.js"></script>
-</body>
-</html>
 
+/*
+ *---------------------------------------------------------------
+ * APPLICATION ENVIRONMENT
+ *---------------------------------------------------------------
+ *
+ * You can load different configurations depending on your
+ * current environment. Setting the environment also influences
+ * things like logging and error reporting.
+ *
+ * This can be set to anything, but default usage is:
+ *
+ *     development
+ *     testing
+ *     production
+ *
+ * NOTE: If you change these, also change the error_reporting() code below
+ *
+ */
+	define('ENVIRONMENT', 'development');
+/*
+ *---------------------------------------------------------------
+ * ERROR REPORTING
+ *---------------------------------------------------------------
+ *
+ * Different environments will require different levels of error reporting.
+ * By default development will show errors but testing and live will hide them.
+ */
+
+if (defined('ENVIRONMENT'))
+{
+	switch (ENVIRONMENT)
+	{
+		case 'development':
+			error_reporting(E_ALL);
+		break;
+
+		case 'testing':
+		case 'production':
+			error_reporting(0);
+		break;
+
+		default:
+			exit('The application environment is not set correctly.');
+	}
+}
+
+/*
+ *---------------------------------------------------------------
+ * SYSTEM FOLDER NAME
+ *---------------------------------------------------------------
+ *
+ * This variable must contain the name of your "system" folder.
+ * Include the path if the folder is not in the same  directory
+ * as this file.
+ *
+ */
+	$system_path = 'system';
+
+/*
+ *---------------------------------------------------------------
+ * APPLICATION FOLDER NAME
+ *---------------------------------------------------------------
+ *
+ * If you want this front controller to use a different "application"
+ * folder then the default one you can set its name here. The folder
+ * can also be renamed or relocated anywhere on your server.  If
+ * you do, use a full server path. For more info please see the user guide:
+ * http://codeigniter.com/user_guide/general/managing_apps.html
+ *
+ * NO TRAILING SLASH!
+ *
+ */
+	$application_folder = 'application';
+
+/*
+ * --------------------------------------------------------------------
+ * DEFAULT CONTROLLER
+ * --------------------------------------------------------------------
+ *
+ * Normally you will set your default controller in the routes.php file.
+ * You can, however, force a custom routing by hard-coding a
+ * specific controller class/function here.  For most applications, you
+ * WILL NOT set your routing here, but it's an option for those
+ * special instances where you might want to override the standard
+ * routing in a specific front controller that shares a common CI installation.
+ *
+ * IMPORTANT:  If you set the routing here, NO OTHER controller will be
+ * callable. In essence, this preference limits your application to ONE
+ * specific controller.  Leave the function name blank if you need
+ * to call functions dynamically via the URI.
+ *
+ * Un-comment the $routing array below to use this feature
+ *
+ */
+	// The directory name, relative to the "controllers" folder.  Leave blank
+	// if your controller is not in a sub-folder within the "controllers" folder
+	// $routing['directory'] = '';
+
+	// The controller class file name.  Example:  Mycontroller
+	// $routing['controller'] = '';
+
+	// The controller function you wish to be called.
+	// $routing['function']	= '';
+
+
+/*
+ * -------------------------------------------------------------------
+ *  CUSTOM CONFIG VALUES
+ * -------------------------------------------------------------------
+ *
+ * The $assign_to_config array below will be passed dynamically to the
+ * config class when initialized. This allows you to set custom config
+ * items or override any default config values found in the config.php file.
+ * This can be handy as it permits you to share one application between
+ * multiple front controller files, with each file containing different
+ * config values.
+ *
+ * Un-comment the $assign_to_config array below to use this feature
+ *
+ */
+	// $assign_to_config['name_of_config_item'] = 'value of config item';
+
+
+
+// --------------------------------------------------------------------
+// END OF USER CONFIGURABLE SETTINGS.  DO NOT EDIT BELOW THIS LINE
+// --------------------------------------------------------------------
+
+/*
+ * ---------------------------------------------------------------
+ *  Resolve the system path for increased reliability
+ * ---------------------------------------------------------------
+ */
+
+	// Set the current directory correctly for CLI requests
+	if (defined('STDIN'))
+	{
+		chdir(dirname(__FILE__));
+	}
+
+	if (realpath($system_path) !== FALSE)
+	{
+		$system_path = realpath($system_path).'/';
+	}
+
+	// ensure there's a trailing slash
+	$system_path = rtrim($system_path, '/').'/';
+
+	// Is the system path correct?
+	if ( ! is_dir($system_path))
+	{
+		exit("Your system folder path does not appear to be set correctly. Please open the following file and correct this: ".pathinfo(__FILE__, PATHINFO_BASENAME));
+	}
+
+/*
+ * -------------------------------------------------------------------
+ *  Now that we know the path, set the main path constants
+ * -------------------------------------------------------------------
+ */
+	// The name of THIS file
+	define('SELF', pathinfo(__FILE__, PATHINFO_BASENAME));
+
+	// The PHP file extension
+	// this global constant is deprecated.
+	define('EXT', '.php');
+
+	// Path to the system folder
+	define('BASEPATH', str_replace("\\", "/", $system_path));
+
+	// Path to the front controller (this file)
+	define('FCPATH', str_replace(SELF, '', __FILE__));
+
+	// Name of the "system folder"
+	define('SYSDIR', trim(strrchr(trim(BASEPATH, '/'), '/'), '/'));
+
+
+	// The path to the "application" folder
+	if (is_dir($application_folder))
+	{
+		define('APPPATH', $application_folder.'/');
+	}
+	else
+	{
+		if ( ! is_dir(BASEPATH.$application_folder.'/'))
+		{
+			exit("Your application folder path does not appear to be set correctly. Please open the following file and correct this: ".SELF);
+		}
+
+		define('APPPATH', BASEPATH.$application_folder.'/');
+	}
+
+/*
+ * --------------------------------------------------------------------
+ * LOAD THE BOOTSTRAP FILE
+ * --------------------------------------------------------------------
+ *
+ * And away we go...
+ *
+ */
+require_once BASEPATH.'core/CodeIgniter.php';
+
+/* End of file index.php */
+/* Location: ./index.php */
